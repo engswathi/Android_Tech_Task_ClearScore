@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AndroidTecTask</string>
+    <string name="credit_score">Your credit score is</string>
+    <string name="total_view">out of 700</string>
+</resources>

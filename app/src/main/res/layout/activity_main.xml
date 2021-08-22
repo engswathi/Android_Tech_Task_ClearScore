@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+        <RelativeLayout
+            android:id="@+id/progress_layout"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_margin="100dp">
+
+                <com.mikhaellopez.circleview.CircleView
+                    android:id="@+id/circleView"
+                    android:layout_width="400dp"
+                    android:layout_height="400dp"
+                    app:cv_border="true"
+                    app:cv_border_color="#000000"
+                    app:cv_border_width="2dp"
+                    />
+
+                <com.bikomobile.donutprogress.DonutProgress
+                    android:id="@+id/donutProgressView"
+                    app:donut_max="700"
+                    app:donut_unfinished_color="@color/white"
+                    app:donut_finished_color="@color/light_orange"
+                    app:donut_text_size="50dp"
+                    app:donut_finished_stroke_width="6dp"
+                    app:donut_text_color="@color/light_orange"
+                    android:layout_width="700dp" android:layout_height="700dp"/>
+                <TextView
+                    android:id="@+id/yourCredit_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/credit_score"
+                    android:layout_marginTop="90dp"
+                    android:textColor="@color/black"
+                    android:layout_alignTop="@id/donutProgressView"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/totalView_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="60dp"
+                    android:textColor="@color/black"
+                    android:layout_below="@+id/yourCredit_text"
+                    android:layout_centerVertical="true"
+                    android:text="@string/total_view"
+                    android:gravity="center"
+                    android:textSize="20dp"/>
+
+        </RelativeLayout>
+</LinearLayout>
+
+
